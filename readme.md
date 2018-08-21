@@ -10,4 +10,7 @@ Concepts Covered
 - Class Methods / Functions
 - Method Chaining ( return this )
 - Class Inheritance ( extends )
-- Class Constructors ( Deep Dive ) 
+- Class Constructors ( Deep Dive )
+- _Prototype_ Object  
+- Creating Custom Class Constructors
+- Object.create(custom constructor)
