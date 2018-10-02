@@ -6,9 +6,13 @@ class Human {
     this.age;
       }
 
+      // walk : function(){
+      //   old method
+      // }
+
       walk(){
         console.log(this.name + ' keeps Walking.')
-        return this
+      
       }
       talk(){
         console.log(this.name + ' is talking! ')
@@ -22,20 +26,19 @@ class Human {
 // Chaining Methods
 // rohito.walk().talk().name;
 
-
-
-
 console.log (Human.wassup() )
 //
 
 var rohito = new Human("180cms" , "Rohito")
 
-rohito;
+rohito['walk'] = () => {
+  console.log("Changed!!")
+}
 
-rohito.age = 29
 
+rohito.walk();
 
-console.log(rohito.age);
+console.log("this.", rohito.walk());
 
 class Warrior extends Human{
   constructor(height,name, muscles){
