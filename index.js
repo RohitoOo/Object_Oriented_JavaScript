@@ -5,13 +5,12 @@ class Human {
     this.name = name,
     this.age;
       }
-
       // walk : function(){
       //   old method
       // }
-
       walk(){
         console.log(this.name + ' keeps Walking.')
+        return this
       
       }
       talk(){
@@ -31,8 +30,13 @@ console.log (Human.wassup() )
 
 var rohito = new Human("180cms" , "Rohito")
 
+var suchi = new Human("160cms", "Suchi")
+
+console.log(suchi.talk())
+
 rohito['walk'] = () => {
   console.log("Changed!!")
+  return this
 }
 
 
@@ -50,6 +54,8 @@ class Warrior extends Human{
 var bhambhani = new Warrior("200cms" , "Bhambhani" , 100)
 
 bhambhani;
+
+console.log(bhambhani)
 
 
 
